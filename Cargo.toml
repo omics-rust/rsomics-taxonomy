@@ -2,20 +2,18 @@
 name = "rsomics-taxonomy"
 version = "0.1.0"
 description = "NCBI taxdump parser + LCA + lineage helpers for the rsomics-* tool family. Layer A primitive."
-edition.workspace = true
-rust-version.workspace = true
-license.workspace = true
-repository.workspace = true
-authors.workspace = true
+edition = "2024"
+rust-version = "1.91"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/omics-rust/rsomics-world"
+authors = ["Zane Leong <efd@live.com>"]
 categories = ["science"]
 keywords = ["ncbi", "taxonomy", "bioinformatics", "lca", "taxdump"]
 
 [dependencies]
-rsomics-common = { path = "../rsomics-common", version = "0.6" }
-thiserror.workspace = true
+rsomics-common = { version = "0.6" }
+thiserror = "2"
 
 [dev-dependencies]
 tempfile = "3"
 
-[lints]
-workspace = true
